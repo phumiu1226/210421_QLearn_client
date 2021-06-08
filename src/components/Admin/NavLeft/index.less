@@ -1,0 +1,68 @@
+@hoverColor : #4AC0A6;
+@defaultTextColor : white;
+
+
+.navbar {
+    display: flex;
+    .navbar-navlink{
+        padding: 0 16px;
+        color : @defaultTextColor;
+        transition: all 0.3s;
+        &:hover{
+            background-color : @hoverColor;
+        }
+        &.active-navlink{
+            background-color : @hoverColor;
+        }
+    }
+    a{
+        padding: 0 16px;
+        color : @defaultTextColor;
+        &:hover{
+            background-color : @hoverColor;
+        }
+
+        
+    }
+    .icon{
+        margin-right: 5px ;
+    }
+    .subnav{
+        position: relative;
+        transition: all 0.3s;
+        &:hover{
+            background-color : @hoverColor;
+            .subnav-content{
+                visibility:visible;
+                opacity: 1;
+            }
+        }
+        .subnav-button{
+            padding: 0 16px;
+            cursor: pointer;
+            color : @defaultTextColor;
+            background-color: inherit;
+            outline: none;
+            border: none;
+        }
+        .subnav-content{
+            width:200px;
+            background-color : #001529;
+
+            visibility:hidden;
+            transition: all 0.3s;
+            opacity: 0;
+            position: absolute;
+
+            
+            a{
+                display: block;
+                transition: none;
+                &:hover {
+                    background-color  : @hoverColor;
+                }
+            }
+            
+        }
+    }
+}

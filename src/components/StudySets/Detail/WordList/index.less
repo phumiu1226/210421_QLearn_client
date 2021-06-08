@@ -1,0 +1,50 @@
+.word-item-outter-box{
+    padding:10px;
+
+
+    .word-item-box{
+        background: white;
+        padding:5px;
+        display:flex;
+
+
+        &-left{
+            max-width:60%;
+            flex : 0 0 60%;
+
+            p{
+                word-break : break-word;
+            }
+
+        }
+
+        &-middle{
+            max-width:20%;
+            flex : 0 0 20%;
+
+            display:flex;
+            justify-content : center;
+            align-items: center;
+
+            .img-box{
+                max-width:150px;
+                width : 100%;
+                height:auto;
+
+                img {
+                    width:100%;
+                }
+            }
+        }
+
+        &-right{
+            max-width:20%;
+            flex : 0 0 20%;
+            text-align: center;
+
+        }
+
+    }
+
+}
+
